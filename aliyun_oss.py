@@ -29,11 +29,8 @@ class AliyunOss(object):
 
     def UploadName(self):
         self.UploadFiles(self.upload_dir)
-        upload_list = []
-        for file in AliyunOss.FILE_LIST:
-            up_list = file.split(self.upload_dir)[1].replace('/', '', 1)
-            upload_list.append(up_list)
-        return upload_list
+        up_list = [file.split(self.upload_dir)[1].replace('/', '', 1) for file in AliyunOss.FILE_LIST]
+        return up_list
 
     def OssApi(self, name, file):
         self.OssBucket.put_object_from_file(name, file)
