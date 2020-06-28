@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 #coding=utf-8
+# 添加节点
 
 import argparse
 from aliyunsdkcore.client import AcsClient
