@@ -27,7 +27,7 @@ class k8s_cluster(object):
         request.set_uri_pattern('/api/v2/clusters/c970e25147efc4f9e98b4b1b73c9822a7')
         body = '''{"count":1,
                     "worker_data_disk":false,
-                    "login_password":"diLI#1234",
+                    "key_pair":"xiangqian",
                     "worker_instance_types":["ecs.g5.6xlarge"],
                     "worker_instance_charge_type":"PostPaid",
                     "vswitch_ids":["vsw-2ze7mbfg62o3dqfv6rbkz"],
